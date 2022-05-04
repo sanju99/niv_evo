@@ -1,0 +1,9 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore iPython checkpoints
+.ipynb_checkpoints
+
+# Ignore compressed (huge) files
+*.gz
+*.zip
