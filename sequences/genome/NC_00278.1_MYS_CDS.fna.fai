@@ -1,0 +1,6 @@
+gene=N,protein=nucleocapsid	1599	29	70	71
+gene=P,protein=phosphoprotein	2130	1682	70	71
+gene=M,protein=matrix	1059	3866	70	71
+gene=F,protein=fusion	1641	4964	70	71
+gene=G,protein=glycoprotein	1809	6658	70	71
+gene=L,protein=polymerase	6735	8520	70	71

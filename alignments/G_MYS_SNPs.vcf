@@ -1,0 +1,50 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.15+htslib-1.15
+##bcftoolsCommand=mpileup -f sequences/genome/NC_00278.1_MYS_CDS.fna alignments/G_MYS_aln_sorted.bam
+##reference=file://sequences/genome/NC_00278.1_MYS_CDS.fna
+##contig=<ID=gene=N,protein=nucleocapsid,length=1599>
+##contig=<ID=gene=P,protein=phosphoprotein,length=2130>
+##contig=<ID=gene=M,protein=matrix,length=1059>
+##contig=<ID=gene=F,protein=fusion,length=1641>
+##contig=<ID=gene=G,protein=glycoprotein,length=1809>
+##contig=<ID=gene=L,protein=polymerase,length=6735>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##INFO=<ID=I16,Number=16,Type=Float,Description="Auxiliary tag used for calling, see description of bcf_callret1_t in bam2bcf.h">
+##INFO=<ID=QS,Number=R,Type=Float,Description="Auxiliary tag used for calling">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##bcftools_viewVersion=1.15+htslib-1.15
+##bcftools_viewCommand=view -v snps alignments/G_MYS_aln.bcf; Date=Sun May  8 22:50:59 2022
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	alignments/G_MYS_aln_sorted.bam
+gene=G	7	.	G	A,<*>	0	.	DP=19;I16=18,0,1,0,1080,64800,60,3600,666,24642,37,1369,108,648,6,36;QS=0.947368,0.0526316,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,20,168,54,171,192
+gene=G	59	.	T	A,<*>	0	.	DP=19;I16=16,0,3,0,960,57600,180,10800,592,21904,111,4107,400,10000,75,1875;QS=0.842105,0.157895,0;VDB=0.0221621;SGB=-0.511536;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	40,0,158,89,167,226
+gene=G	264	.	G	A,<*>	0	.	DP=19;I16=18,0,1,0,1080,64800,60,3600,666,24642,37,1369,450,11250,25,625;QS=0.947368,0.0526316,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,20,168,54,171,192
+gene=G	306	.	C	T,<*>	0	.	DP=19;I16=18,0,1,0,1080,64800,60,3600,666,24642,37,1369,450,11250,25,625;QS=0.947368,0.0526316,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,20,168,54,171,192
+gene=G	321	.	C	T,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	450	.	G	A,<*>	0	.	DP=19;I16=16,0,3,0,960,57600,180,10800,592,21904,111,4107,400,10000,75,1875;QS=0.842105,0.157895,0;VDB=0.0221621;SGB=-0.511536;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	40,0,158,89,167,226
+gene=G	501	.	T	C,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	519	.	A	G,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	543	.	A	G,<*>	0	.	DP=19;I16=15,0,4,0,900,54000,240,14400,555,20535,148,5476,375,9375,100,2500;QS=0.789474,0.210526,0;VDB=0.0058656;SGB=-0.556411;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	65,0,160,110,172,246
+gene=G	556	.	A	G,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	592	.	T	C,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	711	.	C	T,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	814	.	A	G,<*>	0	.	DP=19;I16=18,0,1,0,1080,64800,60,3600,666,24642,37,1369,450,11250,25,625;QS=0.947368,0.0526316,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,20,168,54,171,192
+gene=G	1276	.	G	A,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	1330	.	A	G,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	1409	.	T	A,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	1441	.	A	G,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	1611	.	T	C,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201
+gene=G	1695	.	T	C,<*>	0	.	DP=19;I16=17,0,2,0,1020,61200,120,7200,629,23273,74,2738,425,10625,50,1250;QS=0.894737,0.105263,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	12,0,154,63,160,201

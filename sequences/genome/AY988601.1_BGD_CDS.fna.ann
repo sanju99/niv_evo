@@ -1,0 +1,13 @@
+14973 6 11
+0 gene=N,protein=nucleocapsid (null)
+0 1599 0
+0 gene=P/V/W/C,protein=phosphoprotein (null)
+1599 2130 0
+0 gene=M,protein=matrix (null)
+3729 1059 0
+0 gene=F,protein=fusion,protein_id=AAY43915.1,location=6660..8300,gbkey=CDS (null)
+4788 1641 0
+0 gene=G,protein=glycoprotein (null)
+6429 1809 0
+0 gene=L,protein=polymerase (null)
+8238 6735 0

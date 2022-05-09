@@ -1,9 +1,14 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.15+htslib-1.15
-##bcftoolsCommand=mpileup -f sequences/genome/AY029768.1_MYS.fasta alignments/P_MYS_aln_sorted.bam
-##reference=file://sequences/genome/AY029768.1_MYS.fasta
-##contig=<ID=AY029768.1,length=18246>
+##bcftoolsCommand=mpileup -f sequences/genome/NC_00278.1_MYS_CDS.fna alignments/P_MYS_aln_sorted.bam
+##reference=file://sequences/genome/NC_00278.1_MYS_CDS.fna
+##contig=<ID=gene=N,protein=nucleocapsid,length=1599>
+##contig=<ID=gene=P,protein=phosphoprotein,length=2130>
+##contig=<ID=gene=M,protein=matrix,length=1059>
+##contig=<ID=gene=F,protein=fusion,length=1641>
+##contig=<ID=gene=G,protein=glycoprotein,length=1809>
+##contig=<ID=gene=L,protein=polymerase,length=6735>
 ##ALT=<ID=*,Description="Represents allele(s) other than observed.">
 ##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
 ##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
@@ -22,12 +27,12 @@
 ##INFO=<ID=QS,Number=R,Type=Float,Description="Auxiliary tag used for calling">
 ##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
 ##bcftools_viewVersion=1.15+htslib-1.15
-##bcftools_viewCommand=view -v snps alignments/P_MYS_aln.bcf; Date=Sun May  8 19:59:48 2022
+##bcftools_viewCommand=view -v snps alignments/P_MYS_aln.bcf; Date=Sun May  8 22:50:48 2022
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	alignments/P_MYS_aln_sorted.bam
-AY029768.1	2954	.	T	G,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	3022	.	C	T,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	3225	.	A	C,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	3233	.	C	T,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	3315	.	A	G,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	3537	.	G	A,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
-AY029768.1	4529	.	T	C,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,90,540,6,36;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	549	.	T	G,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	617	.	C	T,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	820	.	A	C,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	828	.	C	T,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	910	.	A	G,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	1132	.	G	A,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,375,9375,25,625;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
+gene=P	2124	.	T	C,<*>	0	.	DP=16;I16=15,0,1,0,900,54000,60,3600,555,20535,37,1369,90,540,6,36;QS=0.9375,0.0625,0;SGB=-0.379885;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,11,163,45,166,188
