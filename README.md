@@ -6,4 +6,9 @@ Summer project at <a href="https://www.ecohealthalliance.org/program/ecohealthne
 
 ## Workflow
 
-Reference Nipah virus genome downloaded from <a href="https://www.ncbi.nlm.nih.gov/data-hub/genome/GCF_000863625.1/" target="_blank">here</a>, NCBI RefSeq NC_002728.1, GenBank AF212302.2.
+Reference Nipah virus genomes (used coding DNA sequences only):
+
+<ul>
+  <li>Malaysian strain: <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_002728.1" target="_blank">NC_002728.1</a></li>
+  <li>Bangladeshi strain: <a href="https://www.ncbi.nlm.nih.gov/nuccore/AY988601.1" target="_blank"<AY988601.1></a></li>
+</ul>
