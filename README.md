@@ -18,3 +18,5 @@ All publicly available sequences were gathered from the NCBI. This was done by s
 ### Deduplication
 
 After deduplication of the sequences, 46 glycoprotein (58%) and 50 phosphoprotein (63%) sequences remained. 
+
+MH891774 was manually added to the P_seqs.fasta file
