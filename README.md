@@ -22,5 +22,5 @@ All publicly available sequences were gathered from the NCBI. This was done by s
 
 After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
 
-MH891774 was manually added to <code>sequences/PGP_seqs.fasta</code>.
+MH891774 was manually added to <code>sequences/PG/P_seqs.fasta</code>.
 JF899340, MH891777, MN549407, and MN549410 are in <code>sequences/PG/G_seqs_plus_lowQuality.fasta</code> but not in <code>sequences/PG/G_seqs.fasta</code>
