@@ -13,7 +13,7 @@ Reference Nipah virus genomes (used coding DNA sequences only):
   <li>Bangladeshi strain: <a href="https://www.ncbi.nlm.nih.gov/nuccore/AY988601.1" target="_blank">AY988601.1</a></li>
 </ul>
 
-79 glycoprotein and 79 phosphoprotein sequences were extracted using BLAST. 76 of these are from the same isolates.
+All publicly available sequences were gathered from the NCBI. This was done by searching one nucleotide sequence for each protein against all Henipaviruses. After removing extremely low-quality sequences (too many ambiguous nucleotides due to quality control issues, prevents alignment to the reference sequences), there were 79 glycoprotein and 79 phosphoprotein sequences (76/79 are from the same isolates).
 
 ### Deduplication
 
