@@ -22,9 +22,9 @@ All publicly available sequences were gathered from the NCBI. This was done by s
 
 After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
 
-Sequences that may be of too low quality and could cause problems in analyses (consider removing them):
+Sequences that may be of too low quality and could cause problems in analyses:
 
 <ul>
-  <li><code>sequences/PG/P_seqs.fasta</code>: MH891774</li>
+  <li>MH891774 in <code>sequences/PG/P_seqs.fasta</code></li>
   <li>JF899340, MH891777, MN549407, and MN549410 are in <code>sequences/PG/G_seqs_plus_lowQuality.fasta</code> but not in <code>sequences/PG/G_seqs.fasta</code></li>
 </ul>
