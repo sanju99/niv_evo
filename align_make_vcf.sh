@@ -16,8 +16,13 @@ samtools sort "$3/$4_aln.bam" -o "$3/$4_aln_sorted.bam"
 # Index the genome file again with samtools
 samtools faidx $1
 
-# Run 'mpileup' to generate VCF format
+# Run 'mpileup' to generate BCF format
 bcftools mpileup -f $1 "$3/$4_aln_sorted.bam" > "$3/$4_aln.bcf"
+
+# Add more information
+#bcftools +fill-tags "$3/$4_aln.bcf" -Ob -o "$3/$4_aln.bcf" -- -t all
+
+#bcftools +fill-tags "$3/$4_aln.bcf" -Ob -o "$3/$4_aln.bcf" -- -t TYPE
 
 # Call SNPs
 bcftools view -v snps "$3/$4_aln.bcf" > "$3/$4_SNPs.vcf"
