@@ -24,7 +24,7 @@ All publicly available sequences were gathered from the NCBI. This was done by s
  
 ## Deduplication
 
-After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
+For evolutionary selection analysis, we use only the unique sequences. After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
 
 Sequences that may be of too low quality and could cause problems in analyses, so just watch out for them:
 
@@ -33,6 +33,12 @@ Sequences that may be of too low quality and could cause problems in analyses, s
   <li>JF899340, MH891777, MN549407, and MN549410 in <code>sequences/PG/G_seqs.fasta</code></li>
 </ul>
 
+Many substitution models and evolutionary models analyze codons. When looking at dN and dS rates, these are of course done with a protein in mind. Therefore, we restrict our analyses to coding regiosn of the glyco- and phosphoprotein genes. The glycoprotein CDS is 1809 nucleotides long, and the phosphoprotein CDS is 2130 nucleotides. Most models use DNA, so the NiV (-) sense RNA has been converted to DNA (U-->T). 
+
 ## Construction of Trees using FastTree
 
 FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
+
+The code for this is in `gather_seq_align` and trees were saved in Newick format: i.e. `fasttree -nt <sequence_file.fasta> > <tree.nwk>`
+
+## SNP Calling
