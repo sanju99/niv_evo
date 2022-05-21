@@ -1,12 +1,14 @@
-<title> Nipah Virus Evolutionary Analysis </title>
+% Nipah Virus Evolutionary Analysis
 
 Summer project at <a href="https://www.ecohealthalliance.org/program/ecohealthnet" target="_blank">EcoHealthNet</a>
 
-## Project Goals
+# Project Goals
 
 Perform evolutionary selection analysis of the glycoprotein and phosphoprotein of Nipah virus (NiV). 
 
-## Workflow
+# Workflow
+
+## Sequence Gathering
 
 Reference Nipah virus genomes (used coding DNA sequences only):
 
@@ -20,7 +22,7 @@ All publicly available sequences were gathered from the NCBI. This was done by s
 <!-- After removing extremely low-quality sequences (too many ambiguous nucleotides due to quality control issues, prevents alignment to the reference sequences), there were 79 glycoprotein and 79 phosphoprotein sequences (76/79 are from the same isolates).
  -->
  
-### Deduplication
+## Deduplication
 
 After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
 
@@ -30,3 +32,7 @@ Sequences that may be of too low quality and could cause problems in analyses, s
   <li>MH891774 in <code>sequences/PG/P_seqs.fasta</code></li>
   <li>JF899340, MH891777, MN549407, and MN549410 in <code>sequences/PG/G_seqs.fasta</code></li>
 </ul>
+
+## Construction of Trees using FastTree
+
+FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
