@@ -41,4 +41,12 @@ FastTree was chosen because it's fast and probably sufficient for this project's
 
 The code for this is in `gather_seq_align` and trees were saved in Newick format: i.e. `fasttree -nt <sequence_file.fasta> > <tree.nwk>`
 
+## Evolutionary Selection Analysis
+
+There are three primary classes of methods for inferring evolutionary selection:
+
+1. Counting-based methods: Create an ancestral sequence reconstruction and compute dN and dS relative to this inferred ancestral sequence. Computationally fast, but have low power for small datasets with few substitutions. This can lead to underestimation of the true number of substitutions.
+2. Fixed effects model: Fit substitution rates on a site-by-site basis without making assumptions about the distribution of rates across the sites. 
+3. Random effects model: Fit a distribution of substitution rates across sites and then infer the rate at which each individual site evolves. Estimation of the rate distribution can have large errors for small datasets. This causes hierarchical Bayes to be very sensitive to the prior distribution, and empirical Bayes to be misleading. Maximum likelihood -> empirical, posterior distribution of rate parameters -> hierarchical. 
+
 ## SNP Calling
