@@ -49,8 +49,6 @@ There are three primary classes of methods for inferring evolutionary selection:
 2. Fixed effects model: Fit substitution rates on a site-by-site basis without making assumptions about the distribution of rates across the sites. Can be slow on large datasets becuase of the large number of parameters. Use maximum likelhood estimation.
 3. Random effects model: Fit a distribution of substitution rates across sites and then infer the rate at which each individual site evolves. Estimation of the rate distribution can have large errors for small datasets. This causes hierarchical Bayes to be very sensitive to the prior distribution, and empirical Bayes to be misleading. Maximum likelihood -> empirical, posterior distribution of rate parameters -> hierarchical. 
 
-Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/1066893" target="_blank">paper</a>. From this, it seems that we want a <b>fixed effects model that does NOT assume the same substitution rate across sites. </b>
-
-Even within a single gene, I expect variation in substitution rate across sites. 
+Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/1066893" target="_blank">paper</a>. From this, it seems that we want a <b>fixed effects model that does NOT assume the same substitution rate across sites. </b> This method produces the fewest false positives for the small sample size we have (~50 sequences for each gene), is not as conservative as counting methods and is less likely to underestimate the substitution rate, and accouns for variation in sbustitution rate across sites. Even within a single gene, I expect variation in substitution rate across sites. 
 
 ## SNP Calling
