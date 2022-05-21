@@ -1,8 +1,10 @@
-# Nipah Virus Evolutionary Analysis
+<title> Nipah Virus Evolutionary Analysis </title>
 
 Summer project at <a href="https://www.ecohealthalliance.org/program/ecohealthnet" target="_blank">EcoHealthNet</a>
 
 ## Project Goals
+
+Perform evolutionary selection analysis of the glycoprotein and phosphoprotein of Nipah virus (NiV). 
 
 ## Workflow
 
