@@ -39,7 +39,7 @@ Many substitution models and evolutionary models analyze codons. When looking at
 
 FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
 
-The code for this is in `gather_seq_align` and trees were saved in Newick format: i.e. `fasttree -nt <sequence_file.fasta> > <tree.nwk>`
+The code for this is in `gather_seq_align.ipynb` and trees were saved in Newick format: i.e. `fasttree -nt <sequence_file.fasta> > <tree.nwk>`
 
 ## Evolutionary Selection Analysis
 
@@ -49,8 +49,14 @@ There are three primary classes of methods for inferring evolutionary selection:
 2. <b>Fixed effects model:</b> Fit substitution rates on a site-by-site basis without making assumptions about the distribution of rates across the sites. Can be slow on large datasets becuase of the large number of parameters. Use maximum likelhood estimation.
 3. <b>Random effects model:</b> Fit a distribution of substitution rates across sites and then infer the rate at which each individual site evolves. Estimation of the rate distribution can have large errors for small datasets. This causes hierarchical Bayes to be very sensitive to the prior distribution, and empirical Bayes to be misleading. Maximum likelihood -> empirical, posterior distribution of rate parameters -> hierarchical. 
 
+### HyPhy
+
 Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/1066893" target="_blank">paper</a>. From this, it seems that we want a <b>fixed effects model that does NOT assume the same substitution rate across sites. </b> This method produces the fewest false positives for the small sample size we have (~50 sequences for each gene), is not as conservative as counting methods and is less likely to underestimate the substitution rate, and accounts for variation in substitution rate across sites. Even within a single gene, I expect variation in substitution rate across sites. 
 
-<b>NOTE:</b>MK575063 was removed from the phosphoprotein analysis because there is a premature stop codon. It is annotated: https://www.ncbi.nlm.nih.gov/nuccore/MK575063
+<b>NOTE:</b><a href="https://www.ncbi.nlm.nih.gov/nuccore/MK575063" target="_blank">MK575063</a> in the phosphoprotein sequence was modified to have deletion characters after the premature stop codon. Stop codons throw errors in HyPhy.
+
+View results using this <a href="http://vision.hyphy.org" target="_blank">tool</a>.
 
 ## SNP Calling
+
+
