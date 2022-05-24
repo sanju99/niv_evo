@@ -70,10 +70,8 @@ View results using this <a href="http://vision.hyphy.org" target="_blank">tool</
 ### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime#metadata-and-date-format" target="_blank">TreeTime</a>. 
 
 <code>
-treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk
+treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk \n
 </code>
-
-\n
 
 <code>
 treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk
