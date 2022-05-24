@@ -43,7 +43,7 @@ FastTree was chosen because it's fast and probably sufficient for this project's
 fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
 </code>    
 
-<br><br>
+<br>
 
 <code>
 fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
@@ -73,7 +73,7 @@ View results using this <a href="http://vision.hyphy.org" target="_blank">tool</
 treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk --outdir snp_calling/20220524_ancestral_G --method-anc probabilistic
 </code>
 
-<br><br>
+<br>
 
 <code>
 treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk --outdir snp_calling/20220524_ancestral_P --method-anc probabilistic
