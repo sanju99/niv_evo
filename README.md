@@ -43,8 +43,6 @@ FastTree was chosen because it's fast and probably sufficient for this project's
 fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
 </code>    
 
-\n 
-
 <code>
 fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
 </code>
@@ -67,10 +65,10 @@ View results using this <a href="http://vision.hyphy.org" target="_blank">tool</
 
 ## SNP Calling
 
-### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime#metadata-and-date-format" target="_blank">TreeTime</a>. 
+### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime" target="_blank">TreeTime</a>. 
 
 <code>
-treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk \n
+treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk
 </code>
 
 <code>
