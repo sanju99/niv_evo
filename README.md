@@ -24,7 +24,7 @@ All publicly available sequences were gathered from the NCBI. This was done by s
  
 ## Deduplication
 
-For evolutionary selection analysis, we use only the unique sequences. After deduplication of the sequences, 50 glycoprotein (60%) and 51 phosphoprotein (64%) sequences remained. 
+For evolutionary selection analysis, we use only the unique sequences. After deduplication of the sequences, 50 glycoprotein (59.5%) and 51 phosphoprotein (63%) sequences remained. 
 
 Sequences that may be of too low quality and could cause problems in analyses, so just watch out for them:
 
@@ -39,7 +39,10 @@ Many substitution models and evolutionary models analyze codons. When looking at
 
 FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
 
-The code for this is in `gather_seq_align.ipynb` and trees were saved in Newick format: i.e. `fasttree -nt <sequence_file.fasta> > <tree.nwk>`
+<code>
+fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
+fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
+</code>
 
 ## Evolutionary Selection Analysis
 
@@ -59,4 +62,9 @@ View results using this <a href="http://vision.hyphy.org" target="_blank">tool</
 
 ## SNP Calling
 
+### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime#metadata-and-date-format" target="_blank">TreeTime</a>. 
 
+<code>
+treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk
+treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk
+</code>
