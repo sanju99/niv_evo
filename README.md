@@ -40,11 +40,11 @@ Many substitution models and evolutionary models analyze codons. When looking at
 FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
 
 <code>
-fasttree -nt -gtr sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
+fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
 </code>    
 
 <code>
-fasttree -nt -gtr sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
+fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
 </code>
 
 ## Evolutionary Selection Analysis
@@ -65,12 +65,12 @@ View results using this <a href="http://vision.hyphy.org" target="_blank">tool</
 
 ## SNP Calling
 
-### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime#metadata-and-date-format" target="_blank">TreeTime</a>. 
+### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime" target="_blank">TreeTime</a>. 
 
 <code>
-treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk --outdir snp_calling/20220524_ancestral_G
+treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk
 </code>
 
 <code>
-treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk --outdir snp_calling/20220524_ancestral_P
-</code> 
+treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk
+</code>
