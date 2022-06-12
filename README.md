@@ -49,6 +49,12 @@ fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
 fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
 </code>
 
+## Construction of Maximum Likelihood Trees using PhyML
+
+<code>
+phyml -a seq_for_analysis/P_deduplicated_no_nonsense.py -d nt
+</code>
+
 ## Evolutionary Selection Analysis
 
 There are three primary classes of methods for inferring evolutionary selection:
