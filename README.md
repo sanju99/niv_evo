@@ -67,7 +67,7 @@ There are three primary classes of methods for inferring evolutionary selection:
 
 Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/1066893" target="_blank">paper</a>. From this, it seems that we want a <b>fixed effects model that does NOT assume the same substitution rate across sites. </b> This method produces the fewest false positives for the small sample size we have (~50 sequences for each gene), is not as conservative as counting methods and is less likely to underestimate the substitution rate, and accounts for variation in substitution rate across sites. Even within a single gene, I expect variation in substitution rate across sites. 
 
-<b>NOTE:</b> <a href="https://www.ncbi.nlm.nih.gov/nuccore/MK575063" target="_blank">MK575063</a> in the phosphoprotein sequence was modified to have deletion characters after the premature stop codon. Stop codons throw errors in HyPhy.
+<b>NOTE:</b> <a href="https://www.ncbi.nlm.nih.gov/nuccore/MK575063" target="_blank">MK575063</a> has a premature stop codon in the phosphoprotein sequence. It was removed from phylogenetic analyses. Stop codons throw errors in HyPhy, so they were removed from all input sequences.
 
 View results using this <a href="http://vision.hyphy.org" target="_blank">tool</a> to analyze the JSON files output by HyPhy.
 
