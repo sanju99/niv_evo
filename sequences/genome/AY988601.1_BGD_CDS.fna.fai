@@ -1,6 +1,0 @@
-gene=N,protein=nucleocapsid	1599	29	70	71
-gene=P/V/W/C,protein=phosphoprotein	2130	1688	70	71
-gene=M,protein=matrix	1059	3872	70	71
-gene=F,protein=fusion,protein_id=AAY43915.1,location=6660..8300,gbkey=CDS	1641	5022	70	71
-gene=G,protein=glycoprotein	1809	6716	70	71
-gene=L,protein=polymerase	6735	8578	70	71
