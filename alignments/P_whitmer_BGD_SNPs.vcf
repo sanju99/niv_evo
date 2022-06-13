@@ -22,7 +22,7 @@
 ##INFO=<ID=QS,Number=R,Type=Float,Description="Auxiliary tag used for calling">
 ##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
 ##bcftools_viewVersion=1.15.1+htslib-1.15.1
-##bcftools_viewCommand=view -v snps alignments/P_whitmer_BGD_aln.bcf; Date=Mon Jun 13 00:08:24 2022
+##bcftools_viewCommand=view -v snps alignments/P_whitmer_BGD_aln.bcf; Date=Mon Jun 13 00:10:35 2022
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	alignments/P_whitmer_BGD_aln_sorted.bam
 AY988601.1	2504	.	T	C,<*>	0	.	DP=26;I16=23,0,3,0,1380,82800,180,10800,851,31487,111,4107,575,14375,75,1875;QS=0.884615,0.115385,0;VDB=0.0221621;SGB=-0.511536;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	20,0,148,89,157,212
 AY988601.1	2572	.	C	T,<*>	0	.	DP=26;I16=24,0,2,0,1440,86400,120,7200,888,32856,74,2738,600,15000,50,1250;QS=0.923077,0.0769231,0;VDB=0.02;SGB=-0.453602;RPBZ=0;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0	PL	0,9,149,72,155,194
