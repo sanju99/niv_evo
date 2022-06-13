@@ -1,0 +1,80 @@
+library(dplyr)
+library(ggtree)
+library(treeio)
+library(magrittr)
+library(ggplot2)
+
+setwd("Desktop/git/niv_evo")
+
+metadata <- read.csv("metadata_all.csv")
+metadata[metadata == "nan"] <- "unknown"
+metadata$Clade %<>% factor
+
+whitmer_isolates_tree <- function(tree_file, metadata) {
+  
+  tree <- read.tree(tree_file)
+  fName <- strsplit(basename(tree_file), split="\\.")[[1]][1]
+  
+  p = ggtree(tree) %<+% metadata +
+    geom_tippoint() +
+    geom_nodelab(size=4, hjust = 1.5, vjust = -0.5) +
+    geom_tiplab(aes(color = Clade), size=5, show.legend=TRUE) +
+    scale_colour_manual(na.translate = F,
+                        name="Clade",
+                        values=c("blue","red")
+    ) + 
+    guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 6))) + 
+    theme(legend.title = element_text(size=20),
+          legend.text = element_text(size=17),
+          legend.position = c(0.1, 0.9)) +
+    geom_treescale(x=0, y=21, fontsize=5, linesize=1, offset=-0.8)
+  
+  ggsave(paste(dirname(tree_file), "/", fName, ".png", sep=""), width = 55, height = 30, units = "cm", limitsize = FALSE)
+  
+}
+
+whitmer_isolates_tree("trees/P_whitmer_BGD_FT.nwk", metadata)
+whitmer_isolates_tree("trees/G_whitmer_BGD_FT.nwk", metadata)
+
+tree <- read.tree("trees/P_dedup_FT.nwk")
+
+metadata <- read.csv("P_dedup_metadata.csv")
+metadata[metadata == "nan"] <- "unknown"
+
+p = ggtree(tree, branch.length="none") %<+% metadata +
+          geom_tippoint(aes(shape=Host), size=3) +
+          geom_nodelab(size=4, hjust = 1.5, vjust = -0.5) +
+          geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
+          scale_colour_manual(na.translate = F,
+                              name="Country",
+                              values=c("royalblue","darkorange", "darkgreen", "purple", "black")
+                              ) +
+          scale_shape_manual(na.translate = F,
+                             values = c(16, 17, 8)) +
+          guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
+          guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
+          theme(legend.title = element_text(size=20),
+                legend.text = element_text(size=15),
+                legend.position = c(0.1, 0.7))
+
+ggsave("trees/P_dedup_no_nonsense.png", width = 60, height = 30, units = "cm", limitsize = FALSE)
+
+tree <- read.tree("trees/P_cds.nwk")
+metadata <- read.csv("P_metadata_all.csv")
+  
+p = ggtree(tree) %<+% metadata +
+  geom_tippoint(aes(shape=Host), size=3) +
+  geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
+  scale_colour_manual(na.translate = F,
+                      name="Country",
+                      values=c("royalblue","darkorange", "darkgreen", "purple", "black")
+  ) +
+  scale_shape_manual(na.translate = F,
+                     values = c(16, 17, 8)) +
+  guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
+  guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
+  theme(legend.title = element_text(size=20),
+        legend.text = element_text(size=15),
+        )
+
+ggsave("trees/P_all.png", width = 60, height = 30, units = "cm", limitsize = FALSE)

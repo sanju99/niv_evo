@@ -26,3 +26,5 @@ bcftools mpileup -f $1 "$3/$4_aln_sorted.bam" > "$3/$4_aln.bcf"
 
 # Call SNPs
 bcftools view -v snps "$3/$4_aln.bcf" > "$3/$4_SNPs.vcf"
+
+sequences/genome/AY988601.1_BGD.fasta seq_for_analysis/P_whitmer_BGD.fasta alignments 

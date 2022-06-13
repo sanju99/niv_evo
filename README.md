@@ -40,13 +40,7 @@ Many substitution models and evolutionary models analyze codons. When looking at
 FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
 
 <code>
-fasttree -nt sequences/PG/G_deduplicated.fasta > trees/G_dedup.nwk
-</code>    
-
-<br>
-
-<code>
-fasttree -nt sequences/PG/P_deduplicated.fasta > trees/P_dedup.nwk
+fasttree -nt <seq_file.fasta> > <tree_file.nwk>
 </code>
 
 ## Construction of Maximum Likelihood Trees using PhyML
