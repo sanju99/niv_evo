@@ -1,0 +1,643 @@
+{
+ "GTR":{
+   "EFV":{
+     "IyrkvIib.model":      [
+[0.3358069410608198],
+      [0.1979901269393512],
+      [0.2381555327606104],
+      [0.2280473992392187] 
+      ]
+    },
+   "LogL":-4191.585838861813,
+   "Trees":    [
+["(((FJ513078:0.002359052964364027,MK673576:0.001413399627494047)Node2:0.0009433432537478368,(MK673591:0.00377684743626726,(MK673578:0,((MK673581:0.001411909267681728,(MK673579:0,MK673580:0)Node12:0)Node10:0.001413711050496099,(MW535746:0.002360832709893567,(((MK673568:0.00141177196642777,((MK673584:0.0004690696058581613,MK673587:0.00094232343910749)Node22:0.002837738345311786,(((MK575062:0.0004701602457596187,(MK575060:0,(MK575061:0.0004701602403678776,MK575068:0.0004701602457596187)Node31:0)Node29:0)Node27:0,MK575067:0.0009408991426378146)Node26:0.003299216670085537,(JN808864:0,(MK673589:0,MK673590:0.0004729993434882711)Node37:0.0004702790812557039)Node35:0)Node25:0.001885784426811522)Node21:0.001886736809643086)Node19:0,((MK673571:0.000470386323628931,MK673572:0)Node41:0.000941470834219088,(MK673566:0.001414705557131066,MK673567:0.0004692941474406127)Node44:0.001886252302924193)Node40:0)Node18:0,(AY988601:0.0004705090868453376,(MK673565:0.004307919136392939,((MN549403:0,MN549404:0.000470599850921028)Node52:0.002830590886737535,(((MN549402:0.0004705230496663383,MN549406:0)Node57:0,(MN549405:0,(MN549410:0.00141269595500794,(MN549407:0.0004741605306727272,MN549409:0)Node64:0)Node62:0.0004701504001860078)Node60:0.0009411937328852396)Node56:0.001411601137349365,(MH523642:0.0004704343217830054,(MH396625:0,MH891774:0)Node69:0)Node67:0.001884697077017783)Node55:0)Node51:0.01583425586386194)Node49:0.0008898528928836226)Node47:0)Node17:0.0009405397309926303)Node15:0.001889071626597751)Node9:0.0009418962706897796)Node7:0.0004705334846048921)Node5:0)Node1:0,(MK673583:0.002828654654578412,(MK673592:0.001884315437443887,((MK673570:0.000942666254483706,MK673588:0.0009416291447487863)Node77:0.0004707955581540382,(MK673585:0,MK673586:0)Node80:0.0004705237020067535)Node76:0)Node74:0.0009417814712986727)Node72:0,(JN808857:0.001884264137946911,MK673582:0.001412169886353643)Node83:0)"] 
+    ],
+   "branch length":{
+     "0":{
+       "AY988601":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001504212342319611
+          },
+         "MLE":0.0004705090868453376
+        },
+       "FJ513078":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.007541866213411683
+          },
+         "MLE":0.002359052964364027
+        },
+       "JN808857":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006023971591055896
+          },
+         "MLE":0.001884264137946911
+        },
+       "JN808864":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MH396625":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MH523642":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.00150397331924295
+          },
+         "MLE":0.0004704343217830054
+        },
+       "MH891774":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK575060":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK575061":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001503097083992745
+          },
+         "MLE":0.0004701602403678776
+        },
+       "MK575062":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001503097101230082
+          },
+         "MLE":0.0004701602457596187
+        },
+       "MK575067":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003008044143680846
+          },
+         "MLE":0.0009408991426378146
+        },
+       "MK575068":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001503097101230082
+          },
+         "MLE":0.0004701602457596187
+        },
+       "MK673565":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.01377236979231214
+          },
+         "MLE":0.004307919136392939
+        },
+       "MK673566":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004522798005990895
+          },
+         "MLE":0.001414705557131066
+        },
+       "MK673567":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.00150032819449154
+          },
+         "MLE":0.0004692941474406127
+        },
+       "MK673568":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004513419348985995
+          },
+         "MLE":0.00141177196642777
+        },
+       "MK673570":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003013693580691023
+          },
+         "MLE":0.000942666254483706
+        },
+       "MK673571":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001503819869675692
+          },
+         "MLE":0.000470386323628931
+        },
+       "MK673572":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673576":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004518622963397403
+          },
+         "MLE":0.001413399627494047
+        },
+       "MK673578":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673579":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673580":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673581":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004513858299575037
+          },
+         "MLE":0.001411909267681728
+        },
+       "MK673582":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004514691494584215
+          },
+         "MLE":0.001412169886353643
+        },
+       "MK673583":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.009043177618746609
+          },
+         "MLE":0.002828654654578412
+        },
+       "MK673584":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001499610337538018
+          },
+         "MLE":0.0004690696058581613
+        },
+       "MK673585":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673586":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673587":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003012597603728074
+          },
+         "MLE":0.00094232343910749
+        },
+       "MK673588":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003010377952348826
+          },
+         "MLE":0.0009416291447487863
+        },
+       "MK673589":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MK673590":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001512173665241043
+          },
+         "MLE":0.0004729993434882711
+        },
+       "MK673591":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.01207453944573629
+          },
+         "MLE":0.00377684743626726
+        },
+       "MK673592":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006024135594979866
+          },
+         "MLE":0.001884315437443887
+        },
+       "MN549402":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001504256981303787
+          },
+         "MLE":0.0004705230496663383
+        },
+       "MN549403":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MN549404":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001504502514064875
+          },
+         "MLE":0.000470599850921028
+        },
+       "MN549405":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MN549406":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MN549407":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001515885967815927
+          },
+         "MLE":0.0004741605306727272
+        },
+       "MN549409":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "MN549410":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004516373330248657
+          },
+         "MLE":0.00141269595500794
+        },
+       "MW535746":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.007547556040168634
+          },
+         "MLE":0.002360832709893567
+        },
+       "Node1":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node10":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.00451961857928765
+          },
+         "MLE":0.001413711050496099
+        },
+       "Node12":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node15":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006039341079055884
+          },
+         "MLE":0.001889071626597751
+        },
+       "Node17":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003006895108629718
+          },
+         "MLE":0.0009405397309926303
+        },
+       "Node18":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node19":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node2":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003015857939844372
+          },
+         "MLE":0.0009433432537478368
+        },
+       "Node21":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006031876695097197
+          },
+         "MLE":0.001886736809643086
+        },
+       "Node22":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.009072218077468816
+          },
+         "MLE":0.002837738345311786
+        },
+       "Node25":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006028831937727141
+          },
+         "MLE":0.001885784426811522
+        },
+       "Node26":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.01054755917341206
+          },
+         "MLE":0.003299216670085537
+        },
+       "Node27":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node29":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node31":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node35":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node37":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.00150347701699561
+          },
+         "MLE":0.0004702790812557039
+        },
+       "Node40":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node41":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003009871835337807
+          },
+         "MLE":0.000941470834219088
+        },
+       "Node44":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006030327732480168
+          },
+         "MLE":0.001886252302924193
+        },
+       "Node47":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node49":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.002844849848275824
+          },
+         "MLE":0.0008898528928836226
+        },
+       "Node5":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node51":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.05062194071864354
+          },
+         "MLE":0.01583425586386194
+        },
+       "Node52":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.009049367731526103
+          },
+         "MLE":0.002830590886737535
+        },
+       "Node55":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node56":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.004512873210313336
+          },
+         "MLE":0.001411601137349365
+        },
+       "Node57":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node60":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003008985945440882
+          },
+         "MLE":0.0009411937328852396
+        },
+       "Node62":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001503065625040234
+          },
+         "MLE":0.0004701504001860078
+        },
+       "Node64":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node67":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.006025355692473033
+          },
+         "MLE":0.001884697077017783
+        },
+       "Node69":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node7":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001504290341686834
+          },
+         "MLE":0.0004705334846048921
+        },
+       "Node72":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node74":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003010864938642626
+          },
+         "MLE":0.0009417814712986727
+        },
+       "Node76":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node77":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001505128187922417
+          },
+         "MLE":0.0004707955581540382
+        },
+       "Node80":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.001504259066828874
+          },
+         "MLE":0.0004705237020067535
+        },
+       "Node83":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0
+          },
+         "MLE":0
+        },
+       "Node9":{
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.003011231951025217
+          },
+         "MLE":0.0009418962706897796
+        }
+      }
+    },
+   "global":{
+     "Substitution rate from nucleotide A to nucleotide C":{
+       "ID":"IyrkvIib.model.theta_AC",
+       "MLE":0.1203087309436786
+      },
+     "Substitution rate from nucleotide A to nucleotide G":{
+       "ID":"IyrkvIib.model.theta_AG",
+       "MLE":1,
+       "constraint":"1"
+      },
+     "Substitution rate from nucleotide A to nucleotide T":{
+       "ID":"IyrkvIib.model.theta_AT",
+       "MLE":0.04622117389653519
+      },
+     "Substitution rate from nucleotide C to nucleotide G":{
+       "ID":"IyrkvIib.model.theta_CG",
+       "MLE":0.01755645921547622
+      },
+     "Substitution rate from nucleotide C to nucleotide T":{
+       "ID":"IyrkvIib.model.theta_CT",
+       "MLE":1.37940701055479
+      },
+     "Substitution rate from nucleotide G to nucleotide T":{
+       "ID":"IyrkvIib.model.theta_GT",
+       "MLE":0.03267765550851157
+      }
+    },
+   "parameters":93
+  }
+}
