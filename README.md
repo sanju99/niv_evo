@@ -37,10 +37,10 @@ Many substitution models and evolutionary models analyze codons. When looking at
 
 ## Construction of Trees using FastTree
 
-FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. 
+FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. Helpful <a href="https://bioinformaticsworkbook.org/phylogenetics/FastTree.html#gsc.tab=0" target="_blank">tutorial</a>.
 
 <code>
-fasttree -nt <seq_file.fasta> > <tree_file.nwk>
+fasttree -nt seq_file.fasta > tree_file.nwk
 </code>
 
 ## Construction of Maximum Likelihood Trees using PhyML
