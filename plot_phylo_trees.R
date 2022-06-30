@@ -36,10 +36,7 @@ whitmer_isolates_tree <- function(tree_file, metadata) {
 whitmer_isolates_tree("trees/P_whitmer_BGD_FT.nwk", metadata)
 whitmer_isolates_tree("trees/G_whitmer_BGD_FT.nwk", metadata)
 
-tree <- read.tree("trees/P_dedup_FT.nwk")
-
-metadata <- read.csv("P_dedup_metadata.csv")
-metadata[metadata == "nan"] <- "unknown"
+tree <- read.tree("trees/G_no_stop_codons_FT.nwk")
 
 p = ggtree(tree, branch.length="none") %<+% metadata +
           geom_tippoint(aes(shape=Host), size=3) +
@@ -57,24 +54,4 @@ p = ggtree(tree, branch.length="none") %<+% metadata +
                 legend.text = element_text(size=15),
                 legend.position = c(0.1, 0.7))
 
-ggsave("trees/P_dedup_no_nonsense.png", width = 60, height = 30, units = "cm", limitsize = FALSE)
-
-tree <- read.tree("trees/P_cds.nwk")
-metadata <- read.csv("P_metadata_all.csv")
-  
-p = ggtree(tree) %<+% metadata +
-  geom_tippoint(aes(shape=Host), size=3) +
-  geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
-  scale_colour_manual(na.translate = F,
-                      name="Country",
-                      values=c("royalblue","darkorange", "darkgreen", "purple", "black")
-  ) +
-  scale_shape_manual(na.translate = F,
-                     values = c(16, 17, 8)) +
-  guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
-  guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
-  theme(legend.title = element_text(size=20),
-        legend.text = element_text(size=15),
-        )
-
-ggsave("trees/P_all.png", width = 60, height = 30, units = "cm", limitsize = FALSE)
+ggsave("trees/G_no_stop_codons_FT.png", width = 60, height = 30, units = "cm", limitsize = FALSE)
