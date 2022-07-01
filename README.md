@@ -35,12 +35,18 @@ Sequences that may be of too low quality and could cause problems in analyses, s
 
 Many substitution models and evolutionary models analyze codons. When looking at dN and dS rates, these are of course done with a protein in mind. Therefore, we restrict our analyses to coding regiosn of the glyco- and phosphoprotein genes. The glycoprotein CDS is 1809 nucleotides long, and the phosphoprotein CDS is 2130 nucleotides. Most models use DNA, so the NiV (-) sense RNA has been converted to DNA (U-->T). 
 
-## Construction of Trees using FastTree
+## Construction of Maximum Likelihood Trees
 
-FastTree was chosen because it's fast and probably sufficient for this project's needs. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. Helpful <a href="https://bioinformaticsworkbook.org/phylogenetics/FastTree.html#gsc.tab=0" target="_blank">tutorial</a>.
+Maximum likelihood trees were constructed using FastTree followed by PhyML. FastTree uses approximately maximum likelihood methods. The output tree from FastTree was used as the starting tree for PhyML, which fine tunes this tree. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary.
 
 <code>
 fasttree -nt seq_file.fasta > tree_file.nwk
+</code>
+
+Using a Bayesian-like transformation of aLRT (aBayes). Optimize tree topology (t), branch length (l) and rate parameters (r). 
+
+<code>
+phyml --input seq_for_analysis/P_no_stop_codons.phy --inputtree trees/P_no_stop_codons_FT.nwk -o tlr --datatype nt --bootstrap -4 
 </code>
 
 ## Construction of Maximum Likelihood Trees using PhyML

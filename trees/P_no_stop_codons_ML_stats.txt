@@ -1,0 +1,47 @@
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                                  ---  PhyML 3.3.20190909  ---                                             
+                              http://www.atgc-montpellier.fr/phyml                                          
+                             Copyright CNRS - Universite Montpellier                                 
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+. Sequence filename: 			P_no_stop_codons.phy
+. Data set: 				#1
+. Initial tree: 			user tree (trees/P_no_stop_codons_FT.nwk)
+. Model of nucleotides substitution: 	HKY85
+. Number of taxa: 			47
+. Log-likelihood: 			-5322.46898
+. Unconstrained log-likelihood: 	-5093.49467
+. Composite log-likelihood: 		-136531.62619
+. Parsimony: 				394
+. Tree size: 				0.19959
+. Discrete gamma model: 		Yes
+  - Number of classes: 			4
+  - Gamma shape parameter: 		0.703
+  - Relative rate in class 1: 		0.07492 [freq=0.250000] 		
+  - Relative rate in class 2: 		0.36515 [freq=0.250000] 		
+  - Relative rate in class 3: 		0.92614 [freq=0.250000] 		
+  - Relative rate in class 4: 		2.63378 [freq=0.250000] 		
+. Transition/transversion ratio: 	14.252087
+. Nucleotides frequencies:
+  - f(A)=  0.33632
+  - f(C)=  0.19811
+  - f(G)=  0.23778
+  - f(T)=  0.22780
+
+. Run ID:				none
+. Random seed:				1656647687
+. Subtree patterns aliasing:		no
+. Version:				3.3.20190909
+. Time used:				0h0m4s (4 seconds)
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ Suggested citations:
+ S. Guindon, JF. Dufayard, V. Lefort, M. Anisimova, W. Hordijk, O. Gascuel
+ "New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0."
+ Systematic Biology. 2010. 59(3):307-321.
+
+ S. Guindon & O. Gascuel
+ "A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood"
+ Systematic Biology. 2003. 52(5):696-704.
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

@@ -36,22 +36,32 @@ whitmer_isolates_tree <- function(tree_file, metadata) {
 whitmer_isolates_tree("trees/P_whitmer_BGD_FT.nwk", metadata)
 whitmer_isolates_tree("trees/G_whitmer_BGD_FT.nwk", metadata)
 
-tree <- read.tree("trees/G_no_stop_codons_FT.nwk")
+create_tree <- function(tree_file) {
 
-p = ggtree(tree, branch.length="none") %<+% metadata +
-          geom_tippoint(aes(shape=Host), size=3) +
-          geom_nodelab(size=4, hjust = 1.5, vjust = -0.5) +
-          geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
-          scale_colour_manual(na.translate = F,
-                              name="Country",
-                              values=c("royalblue","darkorange", "darkgreen", "purple", "black")
-                              ) +
-          scale_shape_manual(na.translate = F,
-                             values = c(16, 17, 8)) +
-          guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
-          guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
-          theme(legend.title = element_text(size=20),
-                legend.text = element_text(size=15),
-                legend.position = c(0.1, 0.7))
+  tree <- read.tree(tree_file)
+  
+  p = ggtree(tree, branch.length="none") %<+% metadata +
+            geom_tippoint(aes(shape=Host), size=3) +
+            geom_nodelab(size=4, hjust = 1.5, vjust = -0.5) +
+            geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
+            scale_colour_manual(na.translate = F,
+                                name="Country",
+                                values=c("royalblue","darkorange", "darkgreen", "purple", "black")
+                                ) +
+            scale_shape_manual(na.translate = F,
+                               values = c(16, 17, 8)) +
+            guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
+            guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
+            theme(legend.title = element_text(size=20),
+                  legend.text = element_text(size=15),
+                  legend.position = c(0.1, 0.7))
+  
+  png_file = paste(tools::file_path_sans_ext(tree_file), ".png", sep="")
+  ggsave(png_file, width = 60, height = 30, units = "cm", limitsize = FALSE)
+  
+}
 
-ggsave("trees/G_no_stop_codons_FT.png", width = 60, height = 30, units = "cm", limitsize = FALSE)
+create_tree("trees/P_no_stop_codons_FT.nwk")
+create_tree("trees/P_no_stop_codons_ML.nwk")
+create_tree("trees/G_no_stop_codons_FT.nwk")
+create_tree("trees/G_no_stop_codons_ML.nwk")
