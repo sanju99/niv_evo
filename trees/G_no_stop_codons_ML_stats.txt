@@ -9,31 +9,31 @@
 . Data set: 				#1
 . Initial tree: 			user tree (trees/G_no_stop_codons_FT.nwk)
 . Model of nucleotides substitution: 	HKY85
-. Number of taxa: 			40
-. Log-likelihood: 			-4085.14946
-. Unconstrained log-likelihood: 	-3982.77956
-. Composite log-likelihood: 		-98404.36161
-. Parsimony: 				269
-. Tree size: 				0.16489
+. Number of taxa: 			37
+. Log-likelihood: 			-4050.48301
+. Unconstrained log-likelihood: 	-3806.27316
+. Composite log-likelihood: 		-91021.41999
+. Parsimony: 				265
+. Tree size: 				0.16270
 . Discrete gamma model: 		Yes
   - Number of classes: 			4
-  - Gamma shape parameter: 		0.361
-  - Relative rate in class 1: 		0.01149 [freq=0.250000] 		
-  - Relative rate in class 2: 		0.15194 [freq=0.250000] 		
-  - Relative rate in class 3: 		0.68514 [freq=0.250000] 		
-  - Relative rate in class 4: 		3.15143 [freq=0.250000] 		
+  - Gamma shape parameter: 		0.368
+  - Relative rate in class 1: 		0.01237 [freq=0.250000] 		
+  - Relative rate in class 2: 		0.15743 [freq=0.250000] 		
+  - Relative rate in class 3: 		0.69412 [freq=0.250000] 		
+  - Relative rate in class 4: 		3.13608 [freq=0.250000] 		
 . Transition/transversion ratio: 	19.986579
 . Nucleotides frequencies:
-  - f(A)=  0.33575
-  - f(C)=  0.19785
-  - f(G)=  0.20337
-  - f(T)=  0.26303
+  - f(A)=  0.33574
+  - f(C)=  0.19770
+  - f(G)=  0.20338
+  - f(T)=  0.26318
 
 . Run ID:				none
-. Random seed:				1656647797
+. Random seed:				1656723578
 . Subtree patterns aliasing:		no
 . Version:				3.3.20190909
-. Time used:				0h0m3s (3 seconds)
+. Time used:				0h0m2s (2 seconds)
 
  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
  Suggested citations:

@@ -37,24 +37,18 @@ Many substitution models and evolutionary models analyze codons. When looking at
 
 ## Construction of Maximum Likelihood Trees
 
-Maximum likelihood trees were constructed using FastTree followed by PhyML. FastTree uses approximately maximum likelihood methods. The output tree from FastTree was used as the starting tree for PhyML, which fine tunes this tree. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary.
+Maximum likelihood trees were constructed using FastTree followed by PhyML. FastTree uses approximately maximum likelihood methods. The output tree from FastTree was used as the starting tree for PhyML, which fine tunes this tree. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. PhyML optimizes tree topology (t), branch length (l) and rate parameters (r). 
+
+The code for constructing both trees is in `make_trees_with_bootstrap.py`, and the script is called with the following command. Three command line arguments are required: the FASTA and PHYLIP files and the number of bootstrap replicates to compute branch support.
 
 <code>
-fasttree -nt seq_file.fasta > tree_file.nwk
+python3 make_trees_with_bootstrap.py seq_for_analysis/P_no_stop_codons.fasta seq_for_analysis/P_no_stop_codons.phy 1000
 </code>
 
-Using a Bayesian-like transformation of aLRT (aBayes). Optimize tree topology (t), branch length (l) and rate parameters (r). 
+## Visualizing Trees
 
-<code>
-phyml --input seq_for_analysis/P_no_stop_codons.phy --inputtree trees/P_no_stop_codons_FT.nwk -o tlr --datatype nt --bootstrap -4 
-</code>
-
-## Construction of Maximum Likelihood Trees using PhyML
-
-<code>
-phyml -a seq_for_analysis/P_deduplicated_no_nonsense.py -d nt
-</code>
-
+Tree visualization was done using `ggtree` in R. The code is found in `plot_phylo_trees.R` and provides a legend for the metadata of each isolate in the final cladogram.
+    
 ## Evolutionary Selection Analysis
 
 There are three primary classes of methods for inferring evolutionary selection:
