@@ -7,3 +7,6 @@
 # Ignore compressed (huge) files
 *.gz
 *.zip
+
+# Ignore R history
+*.Rhistory
