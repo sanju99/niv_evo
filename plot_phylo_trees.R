@@ -68,3 +68,7 @@ create_tree("trees/G_no_stop_codons_FT.nwk")
 # phyml trees
 create_tree("trees/P_no_stop_codons_ML.nwk")
 create_tree("trees/G_no_stop_codons_ML.nwk")
+
+# iqtrees: model selection and ML tree
+create_tree("trees/P_no_stop_codons_iqtree.nwk")
+create_tree("trees/G_no_stop_codons_iqtree.nwk")
