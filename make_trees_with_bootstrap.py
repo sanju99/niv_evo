@@ -29,7 +29,6 @@ subprocess.run(f"mv {old_phyml_bs_stats} {bs_stats}", shell=True)
 
 # convert PhyML bootstrap numbers to proportion (proportion of bootstrap replicates that support a split)
 with open(phyml, "r") as file:
-    
     lines = file.readlines()
     lines = [line.strip("\n") for line in lines]
     

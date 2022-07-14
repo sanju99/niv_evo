@@ -47,7 +47,15 @@ python3 make_trees_with_bootstrap.py seq_for_analysis/P_no_stop_codons.fasta seq
 
 ## Substitution Model Optimization and Construction of ML trees with `iqtree`
 
-Based on BIC
+Model selection was performed with
+
+<code>
+<!--     iqtree -s <i>phylip_file</i> -m MFP -->
+    python3 run_iqtree.py seq_for_analysis/G_no_stop_codons.phy trees/iqtree_model_selection trees/iqtree_output
+    python3 run_iqtree.py seq_for_analysis/P_no_stop_codons.phy trees/iqtree_model_selection trees/iqtree_output
+</code>
+
+Based on Bayesian information criterion, substitution models were selected for final tree building. 
 
 <code>
     iqtree -s seq_for_analysis/G_no_stop_codons.phy -m TIM2+F+G4 -B 1000
@@ -74,9 +82,13 @@ Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/10668
 
 View results using this <a href="http://vision.hyphy.org" target="_blank">tool</a> to analyze the JSON files output by HyPhy.
 
+<code>
+    hyphy absrel --alignment seq_for_analysis/P_no_stop_codons.fasta --tree trees/P_no_stop_codons_iqtree.nwk --code Universal --srv Yes --output hyphy/aBSREL/20220714_P
+</code>
+
 ## SNP Calling
 
-### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime" target="_blank">TreeTime</a>. 
+<!-- ### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime" target="_blank">TreeTime</a>. 
 
 <code>
 treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk --outdir snp_calling/20220524_ancestral_G --method-anc probabilistic
@@ -87,3 +99,4 @@ treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.
 <code>
 treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk --outdir snp_calling/20220524_ancestral_P --method-anc probabilistic
 </code>
+ -->
