@@ -40,7 +40,10 @@ create_tree <- function(tree_file) {
 
   tree <- read.tree(tree_file)
   
-  p = ggtree(tree, branch.length="none") %<+% metadata +
+  # use branch.length="none" if don't want to use branch lengths
+  # p = ggtree(tree, branch.length="none") %<+% metadata +
+  
+  p = ggtree(tree) %<+% metadata +
             geom_tippoint(aes(shape=Host), size=3) +
             geom_nodelab(size=4, hjust = 1.7, vjust = -0.5) +
             geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
