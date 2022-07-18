@@ -43,8 +43,10 @@ create_tree <- function(tree_file) {
   # use branch.length="none" if don't want to use branch lengths
   # p = ggtree(tree, branch.length="none") %<+% metadata +
   
-  p = ggtree(tree) %<+% metadata +
-            geom_tippoint(aes(shape=Host), size=3) +
+  p = ggtree(tree, ladderize=TRUE) %<+% metadata +
+            geom_treescale() +
+            #geom_tippoint(aes(shape=Host), size=2) +
+          
             geom_nodelab(size=4, hjust = 1.7, vjust = -0.5) +
             geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
             scale_colour_manual(na.translate = F,
@@ -60,9 +62,11 @@ create_tree <- function(tree_file) {
                   legend.position = c(0.05, 0.85))
   
   png_file = paste("trees/Figures/", tools::file_path_sans_ext(basename(tree_file)), ".png", sep="")
-  ggsave(png_file, width = 60, height = 30, units = "cm", limitsize = FALSE)
-  
+  ggsave(png_file, width = 50, height = 40, units = "cm", limitsize = FALSE)
+
 }
+
+create_tree("trees/P_no_stop_codons_iqtree.nwk")
 
 # # fasttree trees
 # create_tree("trees/P_no_stop_codons_FT.nwk")
@@ -73,5 +77,5 @@ create_tree <- function(tree_file) {
 # create_tree("trees/G_no_stop_codons_ML.nwk")
 
 # iqtrees: model selection and ML tree
-create_tree("trees/P_no_stop_codons_iqtree.nwk")
-create_tree("trees/G_no_stop_codons_iqtree.nwk")
+# create_tree("trees/P_no_stop_codons_iqtree.nwk")
+# create_tree("trees/G_no_stop_codons_iqtree.nwk")

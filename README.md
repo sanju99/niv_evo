@@ -51,8 +51,7 @@ Model selection was performed with
 
 <code>
 <!--     iqtree -s <i>phylip_file</i> -m MFP -->
-    python3 run_iqtree.py seq_for_analysis/G_no_stop_codons.phy trees/iqtree_model_selection trees/iqtree_output
-    python3 run_iqtree.py seq_for_analysis/P_no_stop_codons.phy trees/iqtree_model_selection trees/iqtree_output
+    python3 run_iqtree.py seq_for_analysis/P_no_stop_codons.phy 1000
 </code>
 
 Based on Bayesian information criterion, substitution models were selected for final tree building. 
