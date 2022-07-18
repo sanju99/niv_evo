@@ -23,7 +23,7 @@ with open(f"{phylip_file}.treefile", "r") as file:
 if len(lines) == 1:
     lines = lines[0]
 else:
-    raise ValueError(f"More than one line in {phylip_file}.contree!")
+    raise ValueError(f"More than one line in {phylip_file}.treefile!")
     
 oldlines_list = lines.split(":")
 newlines = []
