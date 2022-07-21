@@ -3,6 +3,7 @@ library(ggtree)
 library(treeio)
 library(magrittr)
 library(ggplot2)
+library(tidytree)
 
 setwd("Desktop/git/niv_evo")
 
@@ -36,37 +37,60 @@ metadata$Clade %<>% factor
 # whitmer_isolates_tree("trees/P_whitmer_BGD_FT.nwk", metadata)
 # whitmer_isolates_tree("trees/G_whitmer_BGD_FT.nwk", metadata)
 
-create_tree <- function(tree_file) {
+create_tree <- function(tree_file, root=FALSE) {
 
   tree <- read.tree(tree_file)
   
-  # use branch.length="none" if don't want to use branch lengths
-  # p = ggtree(tree, branch.length="none") %<+% metadata +
-  
-  p = ggtree(tree, ladderize=TRUE) %<+% metadata +
-            geom_treescale() +
-            #geom_tippoint(aes(shape=Host), size=2) +
-          
-            geom_nodelab(size=4, hjust = 1.7, vjust = -0.5) +
-            geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
-            scale_colour_manual(na.translate = F,
-                                name="Country",
-                                values=c("royalblue","darkorange", "darkgreen", "purple", "black")
-                                ) +
-            scale_shape_manual(na.translate = F,
-                               values = c(16, 17, 8)) +
-            guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
-            guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
-            theme(legend.title = element_text(size=20),
-                  legend.text = element_text(size=15),
-                  legend.position = c(0.05, 0.85))
+  if (root) {
+    hev_rooted <- root(tree, outgroup = "JN255817", edgelabel = FALSE)
+    p = ggtree(hev_rooted, branch.length="none") %<+% metadata +
+        geom_treescale() +
+        # geom_tippoint(aes(shape=Host), size=2) +
+        geom_nodelab(size=5, hjust=-.1) +
+        geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
+        scale_colour_manual(na.translate = F,
+                            name="Country",
+                            values=c("royalblue","darkorange", "darkgreen", "purple", "black", "darkred")
+        ) +
+        scale_shape_manual(na.translate = F,
+                           values = c(16, 17, 8)) +
+        guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
+        guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
+        theme(legend.title = element_text(size=25),
+              legend.text = element_text(size=20),
+              legend.position = c(0.1, 0.9)
+        )
+  }
+  else {
+    drop_hev <- drop.tip(tree, "JN255817")
+    p = ggtree(drop_hev) %<+% metadata +
+        geom_treescale() +
+        # geom_tippoint(aes(shape=Host), size=2) +
+        geom_nodelab(size=5, hjust=-.1) +
+        # geom_tiplab(aes(color=Country), size=5, show.legend=TRUE) + 
+        geom_tippoint(aes(color=Country)) +
+        scale_colour_manual(na.translate = F,
+                            name="Country",
+                            values=c("royalblue","darkorange", "darkgreen", "purple", "black", "darkred")
+        ) +
+        scale_shape_manual(na.translate = F,
+                           values = c(16, 17, 8)) +
+        guides(color = guide_legend(override.aes = list(label = "\u25CF", size = 4))) +
+        guides(shape = guide_legend(override.aes = list(label = "\u25CF", size = 3))) +
+        theme(legend.title = element_text(size=25),
+              legend.text = element_text(size=20),
+              legend.position = c(0.1, 0.9)
+        )
+  }
   
   png_file = paste("trees/Figures/", tools::file_path_sans_ext(basename(tree_file)), ".png", sep="")
   ggsave(png_file, width = 50, height = 40, units = "cm", limitsize = FALSE)
-
 }
 
-create_tree("trees/P_no_stop_codons_iqtree.nwk")
+# create_tree("trees/P_no_stop_codons_iqtree.nwk")
+create_tree("trees/P_no_stop_codons_HeV_iqtree.nwk", FALSE)
+
+# 
 
 # # fasttree trees
 # create_tree("trees/P_no_stop_codons_FT.nwk")
