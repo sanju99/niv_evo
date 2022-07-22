@@ -1,8 +1,8 @@
 IQ-TREE 2.2.0.3 COVID-edition built May 11 2022
 
-Input file name: niv_evo/seq_for_analysis/P_whitmer_BGD.phy
+Input file name: niv_evo/seq_for_analysis/P_whitmer_BGD_dedup.phy
 Type of analysis: tree reconstruction + non-parametric bootstrap (1000 replicates)
-Random seed number: 203185
+Random seed number: 807135
 
 REFERENCES
 ----------
@@ -18,10 +18,10 @@ https://doi.org/10.1093/molbev/msaa015
 SEQUENCE ALIGNMENT
 ------------------
 
-Input data: 28 sequences with 2130 nucleotide sites
+Input data: 24 sequences with 2130 nucleotide sites
 Number of constant sites: 2041 (= 95.8216% of all sites)
 Number of invariant (constant or ambiguous constant) sites: 2041 (= 95.8216% of all sites)
-Number of parsimony informative sites: 41
+Number of parsimony informative sites: 39
 Number of distinct site patterns: 84
 
 SUBSTITUTION PROCESS
@@ -32,17 +32,17 @@ Model of substitution: HKY+F
 Rate parameter R:
 
   A-C: 1.0000
-  A-G: 30.2437
+  A-G: 30.2436
   A-T: 1.0000
   C-G: 1.0000
-  C-T: 30.2437
+  C-T: 30.2436
   G-T: 1.0000
 
 State frequencies: (empirical counts from alignment)
 
   pi(A) = 0.3364
   pi(C) = 0.1974
-  pi(G) = 0.2377
+  pi(G) = 0.2378
   pi(T) = 0.2284
 
 Rate matrix Q:
@@ -50,22 +50,22 @@ Rate matrix Q:
   A   -0.9456   0.02451    0.8927   0.02836
   C   0.04177    -0.929   0.02952    0.8577
   G     1.263   0.02451    -1.316   0.02836
-  T   0.04177    0.7413   0.02952   -0.8126
+  T   0.04177    0.7412   0.02952   -0.8125
 
 Model of rate heterogeneity: Uniform
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -3616.2795 (s.e. 66.4472)
+Log-likelihood of the tree: -3616.2639 (s.e. 66.4471)
 Unconstrained log-likelihood (without tree): -3725.2008
-Number of free parameters (#branches + #model parameters): 45
-Akaike information criterion (AIC) score: 7322.5589
-Corrected Akaike information criterion (AICc) score: 7324.5455
-Bayesian information criterion (BIC) score: 7577.4334
+Number of free parameters (#branches + #model parameters): 40
+Akaike information criterion (AIC) score: 7312.5278
+Corrected Akaike information criterion (AICc) score: 7314.0979
+Bayesian information criterion (BIC) score: 7539.0829
 
 Total tree length (sum of branch lengths): 0.0443
-Sum of internal branch lengths: 0.0170 (38.3017% of tree length)
+Sum of internal branch lengths: 0.0170 (38.3049% of tree length)
 
 NOTE: Tree is UNROOTED although outgroup taxon 'MK673564' is drawn at root
 Numbers in parentheses are  standard bootstrap support (%)
@@ -76,14 +76,12 @@ Numbers in parentheses are  standard bootstrap support (%)
 |
 |             +---------MK673566
 +-------------| (98)
-|             +**MK673567
+|             +--MK673567
 |
 +---------MK673568
 |
-|                                               +**MK673570
-|                                        +------| (86)
-|                                        |      +**MK673575
-|                                     +--| (59)
+|                                        +------MK673570
+|                                     +--| (61)
 |                                     |  +------MK673588
 |                              +------| (79)
 |                              |      |  +**MK673585
@@ -91,7 +89,7 @@ Numbers in parentheses are  standard bootstrap support (%)
 |                              |      |  +**MK673586
 |                              |      |
 |                              |      +-------------MK673592
-|                           +--| (40)
+|                           +--| (39)
 |                           |  +----------------MK673576
 |                           |  |
 |                           |  +---------MK673582
@@ -99,27 +97,21 @@ Numbers in parentheses are  standard bootstrap support (%)
 |                           |  +--------------------MK673583
 |                           |  |
 |                           |  +---------------------------MK673591
-|                    +------| (58)
+|                    +------| (56)
 |                    |      +**MK673578
 +--------------------| (100)
 |                    |         +**MK673579
-|                    +---------| (93)
+|                    +---------| (94)
 |                              +**MK673580
 |                              |
 |                              +---------MK673581
 |
 |      +--MK673571
-+------| (88)
++------| (89)
 |      +**MK673572
-|      |
-|      +**MK673573
-|      |
-|      +**MK673574
-|      |
-|      +**MK673577
 |
 |                                  +**MK673584
-|             +--------------------| (100)
+|             +--------------------| (99)
 |             |                    +------MK673587
 +-------------| (98)
               |                +**MK673589
@@ -128,14 +120,14 @@ Numbers in parentheses are  standard bootstrap support (%)
 
 Tree in newick format:
 
-(MK673564:0.0004696327,MK673565:0.0051915851,(MK673566:0.0014128175,MK673567:0.0004685612)98:0.0018832823,MK673568:0.0014097943,((((((MK673570:0.0000010000,MK673575:0.0000010000)86:0.0009407985,MK673588:0.0009400437)59:0.0004699779,(MK673585:0.0000010000,MK673586:0.0000010000)63:0.0004696327,MK673592:0.0018818020)79:0.0009395640,MK673576:0.0023546085,MK673582:0.0014097943,MK673583:0.0028244841,MK673591:0.0037696940)40:0.0004696327,MK673578:0.0000010000)58:0.0009400578,(MK673579:0.0000010000,MK673580:0.0000010000,MK673581:0.0014097943)93:0.0014120214)100:0.0028275324,(MK673571:0.0004696327,MK673572:0.0000010000,MK673573:0.0000010000,MK673574:0.0000010000,MK673577:0.0000010000)88:0.0009395640,((MK673584:0.0004677614,MK673587:0.0009414674)100:0.0028362387,(MK673589:0.0000010000,MK673590:0.0004723123)99:0.0023567810)98:0.0018830071);
+(MK673564:0.0004696327,MK673565:0.0051915918,(MK673566:0.0014129917,MK673567:0.0004696327)98:0.0018837088,MK673568:0.0014097943,(((((MK673570:0.0009409683,MK673588:0.0009395640)61:0.0004696327,(MK673585:0.0000010000,MK673586:0.0000010000)63:0.0004696327,MK673592:0.0018818048)79:0.0009395640,MK673576:0.0023546127,MK673582:0.0014097943,MK673583:0.0028244891,MK673591:0.0037697007)39:0.0004696327,MK673578:0.0000010000)56:0.0009395640,(MK673579:0.0000010000,MK673580:0.0000010000,MK673581:0.0014097943)94:0.0014120176)100:0.0028276411,(MK673571:0.0004696327,MK673572:0.0000010000)89:0.0009395640,((MK673584:0.0004677738,MK673587:0.0009414667)99:0.0028361883,(MK673589:0.0000010000,MK673590:0.0004723130)99:0.0023566925)98:0.0018832466);
 
 CONSENSUS TREE
 --------------
 
 Consensus tree is constructed from 1000 bootstrap trees
-Log-likelihood of consensus tree: -3617.110660
-Robinson-Foulds distance between ML tree and consensus tree: 17
+Log-likelihood of consensus tree: -3617.084672
+Robinson-Foulds distance between ML tree and consensus tree: 14
 
 Branches with support >0.000000% are kept (extended consensus)
 Branch lengths are optimized by maximum likelihood on original alignment
@@ -151,10 +143,8 @@ Numbers in parentheses are bootstrap supports (%)
 |
 +----------MK673568
 |
-|                                                    +--MK673570
-|                                             +------| (86)
-|                                             |      +--MK673575
-|                                          +--| (59)
+|                                             +------MK673570
+|                                          +--| (61)
 |                                          |  +------MK673588
 |                                   +------| (79)
 |                                   |      |  +--MK673585
@@ -162,36 +152,30 @@ Numbers in parentheses are bootstrap supports (%)
 |                                   |      |  +--MK673586
 |                                   |      |
 |                                   |      +--------------MK673592
-|                                +--| (7)
+|                                +--| (5)
 |                                |  +----------------------MK673583
-|                             +--| (23)
+|                             +--| (24)
 |                             |  +-------------------MK673576
 |                             |  |
 |                             |  +----------MK673582
 |                         +---| (46)
 |                         |   +--MK673578
-|                      +--| (58)
+|                      +--| (56)
 |                      |  +------------------------------MK673591
 +----------------------| (100)
 |                      |              +--MK673579
 |                      |           +--| (0)
 |                      |           |  +--MK673580
-|                      +-----------| (93)
+|                      +-----------| (94)
 |                                  +----------MK673581
 |
 |      +--MK673571
-+------| (88)
++------| (89)
 |      +--MK673572
-|      |
-|      +--MK673573
-|      |
-|      +--MK673574
-|      |
-|      +--MK673577
 |
 |                                       +--MK673584
-|               +-----------------------| (100)
-|               |                       +-------MK673587
+|               +-----------------------| (99)
+|               |                       +------MK673587
 +---------------| (98)
                 |                   +--MK673589
                 +-------------------| (99)
@@ -200,12 +184,12 @@ Numbers in parentheses are bootstrap supports (%)
 
 Consensus tree in newick format: 
 
-(MK673564:0.0004689310,MK673565:0.0051915790,(MK673566:0.0014129969,MK673567:0.0004690211)98:0.0018836949,MK673568:0.0014099314,((((((((MK673570:0.0000025259,MK673575:0.0000025259)86:0.0009409381,MK673588:0.0009401463)59:0.0004696506,(MK673585:0.0000027571,MK673586:0.0000025259)63:0.0004701449,MK673592:0.0018817871)79:0.0009399548,MK673583:0.0028240627)7:0.0000025259,MK673576:0.0023546698,MK673582:0.0014101916)23:0.0004690353,MK673578:0.0000028166)46:0.0004913499,MK673591:0.0037506055)58:0.0004684331,((MK673579:0.0000025259,MK673580:0.0000025259)0:0.0000025259,MK673581:0.0014101945)93:0.0014337174)100:0.0028059731,(MK673571:0.0004689297,MK673572:0.0000025259,MK673573:0.0000025259,MK673574:0.0000025259,MK673577:0.0000025259)88:0.0009394214,((MK673584:0.0004677656,MK673587:0.0009419517)100:0.0028362706,(MK673589:0.0000021640,MK673590:0.0004723246)99:0.0023566907)98:0.0018832070);
+(MK673564:0.0004689321,MK673565:0.0051915865,(MK673566:0.0014129993,MK673567:0.0004690217)98:0.0018836983,MK673568:0.0014099337,(((((((MK673570:0.0009409260,MK673588:0.0009398755)61:0.0004698290,(MK673585:0.0000025259,MK673586:0.0000025259)63:0.0004699014,MK673592:0.0018817927)79:0.0009399565,MK673583:0.0028240677)5:0.0000025259,MK673576:0.0023543331,MK673582:0.0014105428)24:0.0004690362,MK673578:0.0000028167)46:0.0004913531,MK673591:0.0037506098)56:0.0004684340,((MK673579:0.0000025259,MK673580:0.0000025259)0:0.0000025259,MK673581:0.0014101969)94:0.0014337215)100:0.0028059756,(MK673571:0.0004696063,MK673572:0.0000025259)89:0.0009396367,((MK673584:0.0004672084,MK673587:0.0009413166)99:0.0028362626,(MK673589:0.0000021555,MK673590:0.0004732754)99:0.0023567023)98:0.0018830398);
 
 TIME STAMP
 ----------
 
-Date and time: Thu Jul 21 21:56:56 2022
-Total CPU time used: 1.58239 seconds (0h:0m:1s)
-Total wall-clock time used: 1.87846987 seconds (0h:0m:1s)
+Date and time: Fri Jul 22 00:10:06 2022
+Total CPU time used: 0.724656 seconds (0h:0m:0s)
+Total wall-clock time used: 0.912750402 seconds (0h:0m:0s)
 
