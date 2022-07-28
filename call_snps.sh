@@ -1,28 +1,25 @@
-# command line arguments: genome_file, fasta_to_be_aligned, output_dir, output_name
+# command line arguments: genome_file, in_fasta_file, out_file_prefix
+
+source activate sambcftools
 
 # Index the genome file (broken up by CDS)
 bwa index $1
 
 # Perform the alignment
-bwa aln $1 $2 > "$3/$4_aln.sai"
+bwa aln $1 $2 > "$3_aln.sai"
 
 # Convert to SAM file format, which is human-readable
-bwa samse $1 "$3/$4_aln.sai" $2 > "$3/$4_aln.sam"
+bwa samse $1 "$3_aln.sai" $2 > "$3_aln.sam"
 
 # Convert SAM to BAM and sort the BAM file
-samtools view -b "$3/$4_aln.sam" > "$3/$4_aln.bam"
-samtools sort "$3/$4_aln.bam" -o "$3/$4_aln_sorted.bam"
+samtools view -S -b "$3_aln.sam" > "$3_aln.bam"
+samtools sort "$3_aln.bam" -o "$3_aln_sorted.bam"
 
 # Index the genome file again with samtools
 samtools faidx $1
 
 # Run 'mpileup' to generate BCF format
-bcftools mpileup -f $1 "$3/$4_aln_sorted.bam" > "$3/$4_aln.bcf"
-
-# Add more information
-#bcftools +fill-tags "$3/$4_aln.bcf" -Ob -o "$3/$4_aln.bcf" -- -t all
-
-#bcftools +fill-tags "$3/$4_aln.bcf" -Ob -o "$3/$4_aln.bcf" -- -t TYPE
+bcftools mpileup -f $1 "$3_aln_sorted.bam" > "$3_aln.bcf"
 
 # Call SNPs
-bcftools view -v snps "$3/$4_aln.bcf" > "$3/$4_SNPs.vcf"
+bcftools view -v snps "$3_aln.bcf" > "$3_SNPs.vcf"
