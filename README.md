@@ -65,14 +65,15 @@ Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/10668
 
 <b>NOTE:</b> <a href="https://www.ncbi.nlm.nih.gov/nuccore/MK575063" target="_blank">MK575063</a> has a premature stop codon in the phosphoprotein sequence. It was removed from phylogenetic analyses. Stop codons throw errors in HyPhy, so they were removed from all input sequences.
 
-View results using this <a href="http://vision.hyphy.org" target="_blank">tool</a> to analyze the JSON files output by HyPhy.
-
 The following analyses were run:
 
 <ul>
     <li>MEME</li>
     <li>FEL</li>
     <li>aBSREL</li>
-    <li>Contrast FEL: annotated clades with http://veg.github.io/phylotree.js/#</li>
+    <li>Contrast FEL: annotated clades with <a href="http://veg.github.io/phylotree.js/#" target="_blank">phylotree</a></li>
+</ul>
 
-Contrast FEL was run for Bangladesh vs. Malaysian clades and Bangladesh vs. India vs. Malaysian clades. One isolate, <a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ513078" target="blank">FJ513078</a>, is from India, but it clusters with the Bangladesh sequences. Contrast FEL was run with this isolate annotated as either India or Bangladesh. The results are the same either way though. 
+Contrast FEL was run for Bangladesh vs. Malaysian clades and Bangladesh vs. India vs. Malaysian clades. One isolate, <a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ513078" target="blank">FJ513078</a>, is from India, but it clusters with the Bangladesh sequences. Contrast FEL was run with this isolate annotated as either India or Bangladesh. The results are the same either way though.
+
+Results were viewed using this <a href="http://vision.hyphy.org" target="_blank">tool</a> to analyze the JSON files output by HyPhy. Screenshots of command line summaries are also included to quickly see the results of each test.
