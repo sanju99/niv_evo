@@ -71,7 +71,7 @@ The following analyses were run:
     <li>MEME</li>
     <li>FEL</li>
     <li>aBSREL</li>
-    <li>Contrast FEL: annotated clades with <a href="http://veg.github.io/phylotree.js/#" target="_blank">phylotree</a></li>
+    <li>Contrast FEL: annotated clades with <a href="http://veg.github.io/phylotree.js/#" target="_blank">phylotree</a> based on this <a href="http://hyphy.org/tutorials/phylotree/" target="_blank">tutorial</a></li>
 </ul>
 
 Contrast FEL was run for Bangladesh vs. Malaysian clades and Bangladesh vs. India vs. Malaysian clades. One isolate, <a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ513078" target="blank">FJ513078</a>, is from India, but it clusters with the Bangladesh sequences. Contrast FEL was run with this isolate annotated as either India or Bangladesh. The results are the same either way though.
