@@ -35,26 +35,15 @@ Sequences that may be of too low quality and could cause problems in analyses, s
 
 Many substitution models and evolutionary models analyze codons. When looking at dN and dS rates, these are of course done with a protein in mind. Therefore, we restrict our analyses to coding regiosn of the glyco- and phosphoprotein genes. The glycoprotein CDS is 1809 nucleotides long, and the phosphoprotein CDS is 2130 nucleotides. Most models use DNA, so the NiV (-) sense RNA has been converted to DNA (U-->T). 
 
-## Construction of Maximum Likelihood (ML) Trees with PhyML
+## Substitution Model Optimization and Construction of Maximum Likelihood trees with `iqtree`
 
-Maximum likelihood trees were constructed using FastTree followed by PhyML. FastTree uses approximately maximum likelihood methods. The output tree from FastTree was used as the starting tree for PhyML, which fine tunes this tree. Because of the small number of sequences, Bayesian methods (i.e. BEAST) are probably not necessary. PhyML optimizes tree topology (t), branch length (l) and rate parameters (r). 
-
-The code for constructing both trees is in `make_trees_with_bootstrap.py`, and the script is called with the following command. Three command line arguments are required: the FASTA and PHYLIP files and the number of bootstrap replicates to compute branch support.
+Model selection was performed by calling the following script with the phylip file and the number of bootstrap replicates to be performed.
 
 <code>
-python3 make_trees_with_bootstrap.py seq_for_analysis/P_no_stop_codons.fasta seq_for_analysis/P_no_stop_codons.phy 1000
-</code>
-
-## Substitution Model Optimization and Construction of ML trees with `iqtree`
-
-Model selection was performed with
-
-<code>
-<!--     iqtree -s <i>phylip_file</i> -m MFP -->
     python3 run_iqtree.py seq_for_analysis/P_no_stop_codons.phy 1000
 </code>
 
-This script runs `iqtree` to select the best codon substitution model, then builds a tree with the selected model. Branch support values are nonparametric bootstrap with 1000 replicates by default.
+<br>This script runs `iqtree` to select the best codon substitution model, then builds a tree with the selected model. Branch support values are nonparametric bootstrap with 1000 replicates by default.
 
 ## Visualizing Trees
 
