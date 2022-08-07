@@ -54,18 +54,15 @@ Model selection was performed with
     python3 run_iqtree.py seq_for_analysis/P_no_stop_codons.phy 1000
 </code>
 
-Based on Bayesian information criterion, substitution models were selected for final tree building. 
-
-<code>
-    iqtree -s seq_for_analysis/G_no_stop_codons.phy -m TIM2+F+G4 -B 1000
-    iqtree -s seq_for_analysis/P_no_stop_codons.phy -m TN+F+G4 -B 1000
-</code>
+This script runs `iqtree` to select the best codon substitution model, then builds a tree with the selected model. Branch support values are nonparametric bootstrap with 1000 replicates by default.
 
 ## Visualizing Trees
 
-Tree visualization was done using `ggtree` in R. The code is found in `plot_phylo_trees.R` and provides a legend for the metadata of each isolate in the final cladogram.
+Tree visualization was done using `ete3` in Python. The code is found in `trees.ipynb`. `ete3` was also used to remove the Hendra virus outgroup from trees before running evolutionary hypothesis testing.
+
+Tree figures are saved in the directory `trees/Figures`.
     
-## Evolutionary Selection Analysis
+## Evolutionary Hypothesis Testing
 
 There are three primary classes of methods for inferring evolutionary selection:
 
@@ -81,21 +78,12 @@ Methods comparison <a href="https://academic.oup.com/mbe/article/22/5/1208/10668
 
 View results using this <a href="http://vision.hyphy.org" target="_blank">tool</a> to analyze the JSON files output by HyPhy.
 
-<code>
-    hyphy absrel --alignment seq_for_analysis/P_no_stop_codons.fasta --tree trees/P_no_stop_codons_iqtree.nwk --code Universal --srv Yes --output hyphy/aBSREL/20220714_P
-</code>
+The following analyses were run:
 
-## SNP Calling
+<ul>
+    <li>MEME</li>
+    <li>FEL</li>
+    <li>aBSREL</li>
+    <li>Contrast FEL: annotated clades with http://veg.github.io/phylotree.js/#</li>
 
-<!-- ### Perform ancestral sequence reconstruction with <a href="https://github.com/neherlab/treetime" target="_blank">TreeTime</a>. 
-
-<code>
-treetime ancestral --aln sequences/PG/G_deduplicated.fasta --tree trees/G_dedup.nwk --outdir snp_calling/20220524_ancestral_G --method-anc probabilistic
-</code>
-
-<br>
-
-<code>
-treetime ancestral --aln sequences/PG/P_deduplicated.fasta --tree trees/P_dedup.nwk --outdir snp_calling/20220524_ancestral_P --method-anc probabilistic
-</code>
- -->
+Contrast FEL was run for Bangladesh vs. Malaysian clades and Bangladesh vs. India vs. Malaysian clades. One isolate, <a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ513078" target="blank">FJ513078</a>, is from India, but it clusters with the Bangladesh sequences. Contrast FEL was run with this isolate annotated as either India or Bangladesh. The results are the same either way though. 
