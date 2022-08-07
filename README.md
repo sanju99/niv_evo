@@ -35,7 +35,7 @@ Sequences that may be of too low quality and could cause problems in analyses, s
 
 Many substitution models and evolutionary models analyze codons. When looking at dN and dS rates, these are of course done with a protein in mind. Therefore, we restrict our analyses to coding regiosn of the glyco- and phosphoprotein genes. The glycoprotein CDS is 1809 nucleotides long, and the phosphoprotein CDS is 2130 nucleotides. Most models use DNA, so the NiV (-) sense RNA has been converted to DNA (U-->T). 
 
-## Substitution Model Optimization and Construction of Maximum Likelihood trees with `iqtree`
+## Substitution Model Optimization and Construction of Maximum Likelihood Trees
 
 Model selection was performed by calling the following script with the phylip file and the number of bootstrap replicates to be performed.
 
