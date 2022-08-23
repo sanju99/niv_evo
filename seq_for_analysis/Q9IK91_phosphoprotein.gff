@@ -1,0 +1,22 @@
+##gff-version 3
+##sequence-region Q9IK91 1 709
+Q9IK91	UniProtKB	Chain	1	709	.	.	.	ID=PRO_0000236013;Note=Phosphoprotein	
+Q9IK91	UniProtKB	Disordered Region	53	92	.	.	.	Note=Disordered;Ontology_term=ECO:0000256;evidence=ECO:0000256|SAM:MobiDB-lite	
+Q9IK91	UniProtKB	Disordered Region	265	324	.	.	.	Note=Disordered;Ontology_term=ECO:0000256;evidence=ECO:0000256|SAM:MobiDB-lite	
+Q9IK91	UniProtKB	Disordered Region	384	473	.	.	.	Note=Disordered;Ontology_term=ECO:0000256;evidence=ECO:0000256|SAM:MobiDB-lite	
+Q9IK91	UniProtKB	Protein Binding	560	592	.	.	.	Note=L protein binding;Ontology_term=ECO:0000250;evidence=ECO:0000250	
+Q9IK91	UniProtKB	Coiled coil	498	576	.	.	.	Ontology_term=ECO:0000250;evidence=ECO:0000250	
+Q9IK91	UniProtKB	Compositional bias	60	78	.	.	.	Note=Basic and acidic residues;Ontology_term=ECO:0000256;evidence=ECO:0000256|SAM:MobiDB-lite	
+Q9IK91	UniProtKB	Compositional bias	440	460	.	.	.	Note=Polar residues;Ontology_term=ECO:0000256;evidence=ECO:0000256|SAM:MobiDB-lite	
+Q9IK91	UniProtKB	Phosphorylation	257	257	.	.	.	Note=Phosphoserine%3B by host;Ontology_term=ECO:0000250;evidence=ECO:0000250	
+Q9IK91	UniProtKB	Phosphorylation	350	350	.	.	.	Note=Phosphoserine%3B by host;Ontology_term=ECO:0000250;evidence=ECO:0000250	
+Q9IK91	UniProtKB	Natural variant	206	206	.	.	.	Note=In strain: Isolate Malaysian flying-fox. P->L"	
+Q9IK91	UniProtKB	Natural variant	274	274	.	.	.	Note=In strain: Isolate NV/MY/99/VRI-0626. S->R"	
+Q9IK91	UniProtKB	Natural variant	304	304	.	.	.	Note=In strain: Isolate NV/MY/99/VRI-0626. T->A"	
+Q9IK91	UniProtKB	Natural variant	378	378	.	.	.	Note=In strain: Isolate NV/MY/99/VRI-0626. E->K"	
+Q9IK91	UniProtKB	Helix	1	28	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:4CO6	
+Q9IK91	UniProtKB	Helix	480	483	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:6EB9	
+Q9IK91	UniProtKB	Turn	484	487	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:6EB9	
+Q9IK91	UniProtKB	Helix	490	503	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:6EB9	
+Q9IK91	UniProtKB	Helix	508	541	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:6EB9	
+Q9IK91	UniProtKB	Helix	545	577	.	.	.	Ontology_term=ECO:0007829;evidence=ECO:0007829|PDB:6EB9	
