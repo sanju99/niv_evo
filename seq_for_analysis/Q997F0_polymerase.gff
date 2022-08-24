@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region Q997F0 1 2244
+Q997F0	UniProtKB	Chain	1	2244	.	.	.	ID=PRO_0000236011;Note=RNA-directed RNA polymerase L	
+Q997F0	UniProtKB	Domain	715	899	.	.	.	Note=RdRp catalytic;Ontology_term=ECO:0000255;evidence=ECO:0000255|PROSITE-ProRule:PRU00539	
+Q997F0	UniProtKB	Domain	1810	2017	.	.	.	Note=Mononegavirus-type SAM-dependent 2'-O-MTase;Ontology_term=ECO:0000255;evidence=ECO:0000255|PROSITE-ProRule:PRU00923	
+Q997F0	UniProtKB	Binding site	1840	1849	.	.	.	Ontology_term=ECO:0000255;evidence=ECO:0000255	
+Q997F0	UniProtKB	Natural variant	223	223	.	.	.	Note=In strain: Isolate NiV/MY/99/VRI-0626. T->N"	
+Q997F0	UniProtKB	Natural variant	1645	1645	.	.	.	Note=In strain: Isolate NiV/MY/99/UM-0128%2C Isolate NiV/MY/99/VRI-2794%2C Isolate UMMC1 and Isolate NiV/MY/99/VRI-0626. S->F"	
+Q997F0	UniProtKB	Natural variant	1753	1753	.	.	.	Note=In strain: Isolate NiV/MY/99/VRI-0626. M->V"	
+Q997F0	UniProtKB	Natural variant	2039	2039	.	.	.	Note=In strain: Isolate NiV/MY/99/VRI-0626. H->N"	
