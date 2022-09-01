@@ -1,0 +1,259 @@
+IQ-TREE 2.2.0.3 COVID-edition built Aug  2 2022
+
+Input file name: niv_evo/seq_for_analysis/G_no_stop_codons_HeV.phy
+Type of analysis: tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 514665
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 38 sequences with 1812 nucleotide sites
+Number of constant sites: 1184 (= 65.3422% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1184 (= 65.3422% of all sites)
+Number of parsimony informative sites: 179
+Number of distinct site patterns: 167
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+I
+
+Rate parameter R:
+
+  A-C: 4.5290
+  A-G: 64.4443
+  A-T: 4.5290
+  C-G: 1.0000
+  C-T: 100.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3354
+  pi(C) = 0.1977
+  pi(G) = 0.2035
+  pi(T) = 0.2635
+
+Rate matrix Q:
+
+  A   -0.7307   0.04305    0.6303   0.05736
+  C   0.07302    -1.349  0.009781     1.267
+  G     1.039  0.009505    -1.061   0.01267
+  T   0.07302    0.9505  0.009781    -1.033
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.5215
+
+ Category  Relative_rate  Proportion
+  0         0              0.5215
+  1         2.09           0.4785
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5612.7018 (s.e. 103.6984)
+Unconstrained log-likelihood (without tree): -5241.1701
+Number of free parameters (#branches + #model parameters): 67
+Akaike information criterion (AIC) score: 11359.4037
+Corrected Akaike information criterion (AICc) score: 11364.6284
+Bayesian information criterion (BIC) score: 11728.0502
+
+Total tree length (sum of branch lengths): 2.7358
+Sum of internal branch lengths: 0.1082 (3.9554% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'JN255817' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++-----------------------------------------------------------JN255817
+|
+|  +--AY858111
++--| (91)
+|  |  +--FN869553
+|  +--| (95)
+|     |  +--AJ627196
+|     +--| (97)
+|        |  +**MK673562
+|        +--| (61)
+|           |  +--MK673560
+|           +--| (64)
+|              +--MK673559
+|              |
+|              |  +--AF376747
+|              +--| (64)
+|              |  +**AJ564621
+|              |
+|              +**AF212302
+|
+|     +--MH396625
+|  +--| (81)
+|  |  +--MN549409
++--| (30)
+   |        +--MK673579
+   |     +--| (100)
+   |     |  +**MK673581
+   |  +**| (16)
+   |  |  |     +--MK673584
+   |  |  |  +--| (67)
+   |  |  |  |  |     +--MK673589
+   |  |  |  |  |  +--| (62)
+   |  |  |  |  |  |  |  +--MK575069
+   |  |  |  |  |  |  +--| (63)
+   |  |  |  |  |  |     +**MK575060
+   |  |  |  |  |  |     |
+   |  |  |  |  |  |     +--MK575063
+   |  |  |  |  +--| (61)
+   |  |  |  |     +--JN808864
+   |  |  +--| (65)
+   |  |     +--MK673568
+   |  |     |
+   |  |     +--MK673571
+   |  |     |
+   |  |     |  +--MK673566
+   |  |     +--| (81)
+   |  |     |  +--MK673567
+   |  |     |
+   |  |     +**AY988601
+   +--| (46)
+      +--MW535746
+      |
+      |     +--MK673583
+      |  +--| (79)
+      |  |  |     +**MK673570
+      |  |  |  +--| (93)
+      |  |  |  |  +--MK673588
+      |  |  +--| (78)
+      |  |     +--MK673585
+      |  |     |
+      |  |     +--MK673592
+      +--| (33)
+      |  +--JN808857
+      |  |
+      |  |  +--FJ513078
+      |  +--| (53)
+      |     +--MK673576
+      |     |
+      |     +--MK673578
+      |
+      +--MK673591
+      |
+      +--MK673582
+      |
+      +--MK673565
+
+Tree in newick format:
+
+(JN255817:2.5763771063,(AY858111:0.0089300903,(FN869553:0.0027635233,(AJ627196:0.0011143339,(MK673562:0.0000010000,(MK673560:0.0005550791,MK673559:0.0005550823,(AF376747:0.0005559345,AJ564621:0.0000020823)64:0.0005551694,AF212302:0.0000010000)64:0.0005554348)61:0.0005553524)97:0.0034117818)95:0.0066300374)91:0.0571628022,((MH396625:0.0010802113,MN549409:0.0039364649)81:0.0102420141,(((MK673579:0.0011109842,MK673581:0.0000010000)100:0.0044973721,((MK673584:0.0022277944,((MK673589:0.0005560492,(MK575069:0.0005550294,MK575060:0.0000010000,MK575063:0.0005548246)63:0.0005558917)62:0.0005560811,JN808864:0.0005559138)61:0.0005536806)67:0.0005580596,MK673568:0.0022289577,MK673571:0.0016692442,(MK673566:0.0005555658,MK673567:0.0005562436)81:0.0011134923,AY988601:0.0000010000)65:0.0016857627)16:0.0005405128,MW535746:0.0044726815,((MK673583:0.0022305242,((MK673570:0.0000010000,MK673588:0.0005540029)93:0.0016678365,MK673585:0.0011088774,MK673592:0.0005534105)78:0.0011111256)79:0.0011131576,JN808857:0.0011105004,(FJ513078:0.0022250666,MK673576:0.0016668226,MK673578:0.0005540243)53:0.0011101072)33:0.0005544196,MK673591:0.0027836582,MK673582:0.0022257995,MK673565:0.0016673291)46:0.0053371241)30:0.0081439441);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -5613.423881
+Robinson-Foulds distance between ML tree and consensus tree: 17
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-----------------------------------------------------------JN255817
+|
+|  +--AY858111
++--| (91)
+|  |  +--FN869553
+|  +--| (95)
+|     |  +--AJ627196
+|     +--| (97)
+|        |  +--MK673562
+|        +--| (61)
+|           |  +--MK673560
+|           +--| (64)
+|              +--MK673559
+|              |
+|              |  +--AF376747
+|              +--| (64)
+|              |  +--AJ564621
+|              |
+|              +--AF212302
+|
+|     +--MH396625
+|  +--| (81)
+|  |  +--MN549409
++--| (30)
+   |           +--MK673579
+   |        +--| (100)
+   |        |  +--MK673581
+   |     +--| (27)
+   |     |  +--MW535746
+   |  +--| (3)
+   |  |  |     +--MK673583
+   |  |  |  +--| (79)
+   |  |  |  |  |     +--MK673570
+   |  |  |  |  |  +--| (93)
+   |  |  |  |  |  |  +--MK673588
+   |  |  |  |  +--| (78)
+   |  |  |  |     +--MK673585
+   |  |  |  |     |
+   |  |  |  |     +--MK673592
+   |  |  +--| (33)
+   |  |  |  +--JN808857
+   |  |  |  |
+   |  |  |  |  +--FJ513078
+   |  |  |  +--| (53)
+   |  |  |     |  +--MK673576
+   |  |  |     +--| (13)
+   |  |  |        +--MK673578
+   |  |  |
+   |  |  +--MK673591
+   |  |  |
+   |  |  +--MK673582
+   |  |  |
+   |  |  +--MK673565
+   +--| (46)
+      |     +--MK673584
+      |  +--| (67)
+      |  |  |     +--MK673589
+      |  |  |  +--| (62)
+      |  |  |  |  |  +--MK575069
+      |  |  |  |  +--| (63)
+      |  |  |  |     +--MK575060
+      |  |  |  |     |
+      |  |  |  |     +--MK575063
+      |  |  +--| (61)
+      |  |     +--JN808864
+      +--| (65)
+         +--MK673568
+         |
+         +--MK673571
+         |
+         |  +--MK673566
+         +--| (81)
+         |  +--MK673567
+         |
+         +--AY988601
+
+
+Consensus tree in newick format: 
+
+(JN255817:2.5745153306,(AY858111:0.0089317493,(FN869553:0.0027634893,(AJ627196:0.0011142654,(MK673562:0.0000025259,(MK673560:0.0005558545,MK673559:0.0005558590,(AF376747:0.0005560679,AJ564621:0.0000025259)64:0.0005558583,AF212302:0.0000026595)64:0.0005556441)61:0.0005563500)97:0.0034120103)95:0.0066289132)91:0.0532618578,((MH396625:0.0010805647,MN549409:0.0039388514)81:0.0102505195,((((MK673579:0.0011123684,MK673581:0.0000024702)100:0.0045255140,MW535746:0.0039590891)27:0.0005164226,((MK673583:0.0022317641,((MK673570:0.0000020452,MK673588:0.0005550711)93:0.0016689126,MK673585:0.0011099509,MK673592:0.0005544825)78:0.0011122113)79:0.0011142430,JN808857:0.0011116001,(FJ513078:0.0022263087,(MK673576:0.0016679071,MK673578:0.0005551459)13:0.0000025259)53:0.0011111989)33:0.0005554961,MK673591:0.0027849013,MK673582:0.0022270363,MK673565:0.0016684479)3:0.0000023140,((MK673584:0.0022290431,((MK673589:0.0005565811,(MK575069:0.0005556219,MK575060:0.0000025259,MK575063:0.0005554182)63:0.0005562885)62:0.0005571163,JN808864:0.0005564396)61:0.0005541316)67:0.0005590542,MK673568:0.0022301979,MK673571:0.0016703647,(MK673566:0.0005567211,MK673567:0.0005567690)81:0.0011153768,AY988601:0.0000025259)65:0.0022276393)46:0.0053352199)30:0.0120768902);
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep  1 12:27:54 2022
+Total CPU time used: 4.23862 seconds (0h:0m:4s)
+Total wall-clock time used: 4.778235259 seconds (0h:0m:4s)
+
